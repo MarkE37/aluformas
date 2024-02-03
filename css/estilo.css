@@ -1,0 +1,114 @@
+
+* {
+	margin: 0px; /**/
+    padding: 0px;
+    outline: 0;
+}
+
+body {
+	overflow-x:hidden;
+	background:linear-gradient(90deg,rgba(0, 0, 0, 0.7) 0,rgba(0, 0, 0, 0.7) 100%),url(../img/bg-masthead.jpg);
+	/*background-image: url("../img/bg-masthead.jpg");    /*Color de fondo de la pagina*/
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	background-attachment: fixed;
+    font-family: Verdana, Arial, Helvetica, sans-serif; /*Tipo de letra del cuerpo*/
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+#principal {
+	width: 144px;
+	color: white;  /*Color de la letra de Menú principal*/
+	background-color: #0B615E;   Color de Fondo del boton donde está Menú Principal
+	border: solid 1px white;   /*Color del borde*/
+	padding: 8px;
+	position: absolute;
+	margin: 20px;
+	font-size: 0.9em;
+	text-align: center;
+	cursor: pointer;  /*Convierte al cursor en una mano al pasar por el enlace del Boton Menú principal*/
+}
+
+#principal:hover #menu {display: block;}
+
+#menu {
+
+	text-align: center;
+	font-size: 0.85em;
+	width: 320px;
+	display: none;
+	position: relative;
+	padding-top: 10px;
+	left: -9px;
+	margin-bottom: -10px;
+}
+#menu ul {
+	list-style-type:none;
+	border: 0;
+}
+#menu ul li.nivel1 { width: 162px; }
+#menu ul li.primera { border-top: solid 1px #FFF;}
+#menu ul li a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	background-color: black;
+	border: solid 1px white;
+	border-top: none;
+	padding: 8px;
+	position: relative;
+}
+#menu ul li:hover {
+	position: relative;
+	background-color:  #0B615E;
+	color: #000;
+}
+#menu ul li a:hover, #menu ul li:hover a.nivel1 {
+	background-color: #0B615E;
+	color: #000;
+	position: relative;
+}
+#menu ul li a.nivel1 {
+	display: block!important;
+	display: none;
+	position: relative;
+}
+
+#columna {
+	margin-right: 400px;
+	float: right;
+	width: 33%;
+	text-align: justify;
+	color: white;  /*Color de la letra del formulario*/
+
+}
+#subtitulo2 { /*Caracteríticas de los subtítulos por ej Formulario 1*/
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 25px;
+	color: white;
+}
+
+.boton{
+	border-radius: 17px;
+	font-weight: bold;
+	width: 90px;
+	height: 25px;
+}
+
+table{
+   border-width: 5px;
+   background-color: #0B615E;
+ }
+#detalle table{
+  border-width: 5px;
+  background-color: #5D6D7E;
+}
+
+.datosObligatorios{
+	font-size: 10pt;
+	font-style: oblique;
+	text-decoration: underline white;
+}

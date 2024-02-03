@@ -1,0 +1,191 @@
+<?php
+/* Smarty version 3.1.29, created on 2021-05-05 01:41:44
+  from "D:\disenoWeb\www\sis_aluformas\privada\vidrios\templates\vidrio_modificar.tpl" */
+
+if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
+  'has_nocache_code' => false,
+  'version' => '3.1.29',
+  'unifunc' => 'content_6091f7d8694ce6_85246262',
+  'file_dependency' => 
+  array (
+    '5e5758b34f0ee66e4432fe09a8d8b03f2db633f3' => 
+    array (
+      0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\vidrios\\templates\\vidrio_modificar.tpl',
+      1 => 1620178022,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_6091f7d8694ce6_85246262 ($_smarty_tpl) {
+?>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+     <head>
+          <link rel="stylesheet" href="../<?php echo $_smarty_tpl->tpl_vars['direc_css']->value;?>
+" type="text/css">
+          <?php echo '<script'; ?>
+ type="text/javascript" src="js/expresiones_regulares.js"><?php echo '</script'; ?>
+>
+          <?php echo '<script'; ?>
+ type="text/javascript" src="js/validar_vidrio.js"><?php echo '</script'; ?>
+>
+     </head>
+     <body>
+          <br><br><br><br>
+          <center>
+               <h2>MODIFICAR VIDRIOS</h2>
+               <form action="vidrio_modificar1.php" method="post" name="formu">
+                    <table>
+                         <tr>
+                              <th align="right">tipo de vidrio (*)</th><th align="top">:</th>
+                              <td>
+                                   <select name="tipo_vidrio">
+                                        <?php
+$_from = $_smarty_tpl->tpl_vars['tipovidrio']->value;
+if (!is_array($_from) && !is_object($_from)) {
+settype($_from, 'array');
+}
+$__foreach_r_0_saved_item = isset($_smarty_tpl->tpl_vars['r']) ? $_smarty_tpl->tpl_vars['r'] : false;
+$_smarty_tpl->tpl_vars['r'] = new Smarty_Variable();
+$_smarty_tpl->tpl_vars['r']->_loop = false;
+foreach ($_from as $_smarty_tpl->tpl_vars['r']->value) {
+$_smarty_tpl->tpl_vars['r']->_loop = true;
+$__foreach_r_0_saved_local_item = $_smarty_tpl->tpl_vars['r'];
+?>
+                                        <option value="<?php echo $_smarty_tpl->tpl_vars['r']->value['id_tipo_vidrio'];?>
+"><?php echo $_smarty_tpl->tpl_vars['r']->value['nombre'];?>
+</option>
+                                        <?php
+$_smarty_tpl->tpl_vars['r'] = $__foreach_r_0_saved_local_item;
+}
+if ($__foreach_r_0_saved_item) {
+$_smarty_tpl->tpl_vars['r'] = $__foreach_r_0_saved_item;
+}
+?>
+                                        <?php
+$_from = $_smarty_tpl->tpl_vars['tipovidrios']->value;
+if (!is_array($_from) && !is_object($_from)) {
+settype($_from, 'array');
+}
+$__foreach_r_1_saved_item = isset($_smarty_tpl->tpl_vars['r']) ? $_smarty_tpl->tpl_vars['r'] : false;
+$_smarty_tpl->tpl_vars['r'] = new Smarty_Variable();
+$_smarty_tpl->tpl_vars['r']->_loop = false;
+foreach ($_from as $_smarty_tpl->tpl_vars['r']->value) {
+$_smarty_tpl->tpl_vars['r']->_loop = true;
+$__foreach_r_1_saved_local_item = $_smarty_tpl->tpl_vars['r'];
+?>
+                                        <option value="<?php echo $_smarty_tpl->tpl_vars['r']->value['id_tipo_vidrio'];?>
+"><?php echo $_smarty_tpl->tpl_vars['r']->value['nombre'];?>
+</option>
+                                        <?php
+$_smarty_tpl->tpl_vars['r'] = $__foreach_r_1_saved_local_item;
+}
+if ($__foreach_r_1_saved_item) {
+$_smarty_tpl->tpl_vars['r'] = $__foreach_r_1_saved_item;
+}
+?>
+                                   </select>
+                              </td>
+                         </tr>
+                         <tr>
+                              <th align="right">Color (*)</th><th align="top">:</th>
+                              <td>
+                                   <select name="color">
+                                        <?php
+$_from = $_smarty_tpl->tpl_vars['color']->value;
+if (!is_array($_from) && !is_object($_from)) {
+settype($_from, 'array');
+}
+$__foreach_r_2_saved_item = isset($_smarty_tpl->tpl_vars['r']) ? $_smarty_tpl->tpl_vars['r'] : false;
+$_smarty_tpl->tpl_vars['r'] = new Smarty_Variable();
+$_smarty_tpl->tpl_vars['r']->_loop = false;
+foreach ($_from as $_smarty_tpl->tpl_vars['r']->value) {
+$_smarty_tpl->tpl_vars['r']->_loop = true;
+$__foreach_r_2_saved_local_item = $_smarty_tpl->tpl_vars['r'];
+?>
+                                        <option value="<?php echo $_smarty_tpl->tpl_vars['r']->value['id_color'];?>
+"><?php echo $_smarty_tpl->tpl_vars['r']->value['nombre'];?>
+</option>
+                                        <?php
+$_smarty_tpl->tpl_vars['r'] = $__foreach_r_2_saved_local_item;
+}
+if ($__foreach_r_2_saved_item) {
+$_smarty_tpl->tpl_vars['r'] = $__foreach_r_2_saved_item;
+}
+?>
+                                        <?php
+$_from = $_smarty_tpl->tpl_vars['colores']->value;
+if (!is_array($_from) && !is_object($_from)) {
+settype($_from, 'array');
+}
+$__foreach_r_3_saved_item = isset($_smarty_tpl->tpl_vars['r']) ? $_smarty_tpl->tpl_vars['r'] : false;
+$_smarty_tpl->tpl_vars['r'] = new Smarty_Variable();
+$_smarty_tpl->tpl_vars['r']->_loop = false;
+foreach ($_from as $_smarty_tpl->tpl_vars['r']->value) {
+$_smarty_tpl->tpl_vars['r']->_loop = true;
+$__foreach_r_3_saved_local_item = $_smarty_tpl->tpl_vars['r'];
+?>
+                                        <option value="<?php echo $_smarty_tpl->tpl_vars['r']->value['id_color'];?>
+"><?php echo $_smarty_tpl->tpl_vars['r']->value['nombre'];?>
+</option>
+                                        <?php
+$_smarty_tpl->tpl_vars['r'] = $__foreach_r_3_saved_local_item;
+}
+if ($__foreach_r_3_saved_item) {
+$_smarty_tpl->tpl_vars['r'] = $__foreach_r_3_saved_item;
+}
+?>
+                                   </select>
+                              </td>
+                         </tr>
+                         <?php
+$_from = $_smarty_tpl->tpl_vars['vidrio']->value;
+if (!is_array($_from) && !is_object($_from)) {
+settype($_from, 'array');
+}
+$__foreach_r_4_saved_item = isset($_smarty_tpl->tpl_vars['r']) ? $_smarty_tpl->tpl_vars['r'] : false;
+$_smarty_tpl->tpl_vars['r'] = new Smarty_Variable();
+$_smarty_tpl->tpl_vars['r']->_loop = false;
+foreach ($_from as $_smarty_tpl->tpl_vars['r']->value) {
+$_smarty_tpl->tpl_vars['r']->_loop = true;
+$__foreach_r_4_saved_local_item = $_smarty_tpl->tpl_vars['r'];
+?>
+                         <tr>
+                              <th align="left">ancho</th><th>:</th>
+                              <td> <input type="text" name="ancho" value="<?php echo $_smarty_tpl->tpl_vars['r']->value['ancho'];?>
+"> </td>
+                         </tr>
+                         <tr>
+                              <th align="left">alto</th><th>:</th>
+                              <td> <input type="text" name="alto" value="<?php echo $_smarty_tpl->tpl_vars['r']->value['alto'];?>
+"> </td>
+                         </tr>
+                         <tr>
+                              <td align="center" colspan="3">
+                                   <input type="hidden" name="accion" value="">
+                                   <input type="hidden" name="id_vidrio" value="<?php echo $_smarty_tpl->tpl_vars['r']->value['id_vidrio'];?>
+">
+                                   <input type="button" name="Aceptar" value="Aceptar" onclick="validar();">
+                                   <input type="button" name="Cancelar" value="Cancelar" onclick="javascript:location.href='vidrios.php';">
+                              </td>
+                         </tr>
+                         <?php
+$_smarty_tpl->tpl_vars['r'] = $__foreach_r_4_saved_local_item;
+}
+if ($__foreach_r_4_saved_item) {
+$_smarty_tpl->tpl_vars['r'] = $__foreach_r_4_saved_item;
+}
+?>
+                         <tr>
+                              <td colspan="3" align="center"> <b>(*) Campos Obligatorios</b> </td>
+                         </tr>
+                    </table>
+               </form>
+          </center>
+     </body>
+</html>
+<?php }
+}

@@ -1,0 +1,280 @@
+body {
+	overflow-x:hidden;
+	background:linear-gradient(90deg,rgba(0, 0, 0, 0.7) 0,rgba(0, 0, 0, 0.7) 100%),url(img/bg-masthead.jpg);
+	/*background-image: url("../img/bg-masthead.jpg");    /*Color de fondo de la pagina*/
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	background-attachment: fixed;
+    font-family: Verdana, Arial, Helvetica, sans-serif; /*Tipo de letra del cuerpo*/
+    font-size: 12pt;
+    font-weight: bold;
+}
+.contenedor {
+	margin: 0px auto;
+	width: 800px;
+	/* [disabled]background: #333333; */
+	text-align: center;
+	clear: both;
+}
+
+.contenedor h1 {
+	font: italic bold 36px Georgia, "Times New Roman", Times, serif;
+	color: #ffffff;
+	margin-top: 40px;
+	margin-bottom: 50px;
+	text-shadow:1px 1px 0 #ffffff;
+	-moz-text-shadow:1px 1px 0 #0B615E;
+	-webkit-text-shadow:1px 1px 0 #0B615E;
+}
+.contenedor ul {
+	text-align: left;
+	width: 100%;
+	background: #0B615E;
+	margin: 0px;
+	padding: 10px 10px 10px 30px;
+	border: 3px solid #1d1d1d;
+	list-style: none;
+	position: relative;
+	float:left;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.contenedor ul li {
+	display: block;
+	float:left;
+	position: relative;
+}
+.contenedor ul li#buscador {
+	float: right;
+	position: relative;
+}
+.contenedor ul li a {/*Listas primer nivel*/
+	font: bold 14px Tahoma, Geneva, sans-serif;
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+	float:left;
+	padding: 8px;
+}
+
+.contenedor ul li a {/*Estado Hover/Activo de los enlaces*/
+	background: #0b615e;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.contenedor ul li a:hover, .contenedor ul li a.active {/*Estado Hover/Activo de los enlaces*/
+	background: #2f2f2f;
+	color: #ffffff;
+	font-weight: bold;
+}
+.contenedor ul li ul {/*estilos de la lista secundaria*/
+	margin: 0px;
+	padding: 0px;
+	width: 150px;
+	height: 0;
+	float: left;
+	position: absolute;
+	left: 0px;
+	top: 32px;
+	border: 0;
+	opacity: 0;
+	overflow: hidden;
+	background: #000000;
+	z-index: 1;
+	border-radius: 0px 0px 5px 5px;
+	-moz-border-radius: 0px 0px 5px 5px;
+	-webkit-border-radius: 0px 0px 5px 5px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-ms-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+.contenedor ul li ul.children1 li a{
+	color: #fefefe !important;
+	padding: 13px 0 13px 20px;
+	width: 180px;
+	border-bottom: 1px solid #2f2f2f;
+	font-size: 12px;
+	background-color: #fefefe
+
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.contenedor ul li ul li:last-child a{border-bottom:none !important;}
+.contenedor ul li ul li a:hover{
+	color: #ffffff !important;
+	font-weight: bold;
+	padding-left:28px;
+}
+
+
+.contenedor ul li:hover ul.children1{overflow:visible;opacity:1;}
+
+.contenedor ul#menu:after {
+	/* Posiciona la sobora por detras del color de la caja*/
+	z-index: -1;
+	position: absolute;
+	/* no aplico ningún contenidos HTML */
+	content: "";
+	/* posiciona la sombra con respecto al derecho y superior */
+	right: 10px;
+	top: 55%;
+	/* configura el ancho */
+	width: 48%;
+	height: 20px;
+	/* color de fondo */
+	background: #000000;
+	/* definicion de la sombra estandar para box-shadow */
+	box-shadow: 0 0 8px 7px rgba(0, 0, 0, 1);
+	-moz-box-shadow: 0 0 8px 7px rgba(0, 0, 0, 1);
+	-webkit-box-shadow: 0 0 8px 7px rgba(0, 0, 0, 1);
+	/* rotacion de la sombra */
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	-o-transform: rotate(2deg);
+	-ms-transform: rotate(2deg);
+	transform: rotate(2deg);
+}
+.contenedor ul#menu:before{
+	/* Posiciona la sobora por detras del color de la caja*/
+	z-index: -1;
+	position: absolute;
+	/* no aplico ningún contenidos HTML */
+	content: "";
+	/* posiciona la sombra con respecto al izquierdo y superior */
+	left: 10px;
+	top: 55%;
+	/* configura el ancho */
+	width: 50%;
+	height: 20px;
+	/* color de fondo */
+	background: #000000;
+	/* definicion de la sombra estandar para box-shadow */
+	box-shadow: 0 0 8px 7px rgba(0, 0, 0, 1);
+	-moz-box-shadow: 0 0 8px 7px rgba(0, 0, 0, 1);
+	-webkit-box-shadow: 0 0 8px 7px rgba(0, 0, 0, 1);
+	/* rotacion de la sombra */
+	-webkit-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+	-o-transform: rotate(-2deg);
+	-ms-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+}
+.contenedor ul li ul#menu:before,.contenedor ul li ul#menu:after{visibility:hidden;}
+
+h2{
+	color: white;
+}
+
+table{
+	color: white;
+	background-color: #0B615E;
+	border-collapse: collapse;
+	border-radius: 10px;
+}
+
+th{
+	padding: 10px;
+}
+
+input::placeholder{
+	font-size: 13px;
+	font-weight: bold;
+}
+
+input[type="button" i], input[type="reset" i]{
+	font-weight: bold;
+	color: black;
+	border-radius: 8px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 18px;
+	padding-right: 18px;
+}
+.datosObligatorios{
+	text-decoration: underline;
+	font-style: oblique;
+	font-size: 12px;
+}
+hr{
+	background-color: #ffffff;
+	height: 1px;
+}
+input[type="text" i], select, option{
+	color: black;
+}
+
+.logo {
+	width: 100px;
+	margin: 0;
+	padding: 0px 30px 0px 0px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.normal *{
+	color: white;
+}
+
+.normal a{
+	font-weight: bold;
+}
+
+.normal table{
+	background: rgba(76, 175, 80, 0);
+}
+
+.listado thead{
+	background-color: #0B615E;
+	border-bottom: solid 5px #033c3a;
+	color: white;
+}
+
+.listado tr:nth-child(even){
+	background-color: #bbbbbb;
+}
+
+.listado table{
+	text-align: left;
+	background: white;
+	color: black;
+	border-collapse: collapse;
+}
+
+.listado th,td{
+	padding: 5px;
+}
+
+.listado tr:hover td{
+	background-color: #427b79;
+}
+
+.listado a{
+	font-weight: bold;
+	color: black;
+}
+
+legend{
+	color: white;
+	font-size:18px;
+}
+fieldset{
+	border:solid 2px;
+}
